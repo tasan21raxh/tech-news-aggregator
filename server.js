@@ -16,7 +16,7 @@ const execAsync   = promisify(exec);
 const __dirname   = path.dirname(fileURLToPath(import.meta.url));
 const PORT        = process.env.PORT || 3001;
 const NEWS_FILE   = path.join(__dirname, 'all_news.json');
-const FRONT_DIST  = path.join(__dirname, '../frontend/dist');
+const FRONT_DIST  = path.join(__dirname, 'dist');
 
 const app = express();
 
