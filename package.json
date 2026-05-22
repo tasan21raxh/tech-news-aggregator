@@ -1,0 +1,22 @@
+{
+  "name": "news-aggregator-backend",
+  "version": "2.0.0",
+  "description": "Automated News Aggregator — Smart Backend Pipeline",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start"     : "node server.js",
+    "fetch"     : "node fetch_news.js",
+    "fetch:mock": "node fetch_news.js",
+    "dev"       : "node --watch server.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "cors"             : "^2.8.5",
+    "dotenv"           : "^16.5.0",
+    "express"          : "^4.18.2",
+    "rss-parser"       : "^3.13.0"
+  },
+  "engines": { "node": ">=18.0.0" },
+  "license": "MIT"
+}
